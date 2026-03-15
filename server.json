@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.SKurakov/getexperience",
+  "title": "GetExperience",
+  "description": "Search and book tours and travel experiences in 40+ countries via MCP.",
+  "version": "0.6.0",
+  "repository": {
+    "url": "https://github.com/SKurakov/getexperience-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "sse",
+      "url": "https://getexperience.com/mcp",
+      "headers": [
+        {
+          "name": "X-Api-Key",
+          "description": "API key for B2B booking (not required for browsing)",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
