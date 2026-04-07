@@ -3,14 +3,14 @@
   "name": "io.github.SKurakov/getexperience",
   "title": "GetExperience",
   "description": "Search and book tours and travel experiences in 40+ countries via MCP.",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "repository": {
     "url": "https://github.com/SKurakov/getexperience-mcp",
     "source": "github"
   },
   "remotes": [
     {
-      "type": "sse",
+      "type": "streamablehttp",
       "url": "https://getexperience.com/mcp",
       "headers": [
         {

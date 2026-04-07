@@ -26,7 +26,9 @@ Book tours on behalf of your customers — instant confirmation, no guest paymen
 https://getexperience.com/mcp
 ```
 
-Transport: SSE (Server-Sent Events). No installation required — it's a hosted remote server.
+Transport: **Streamable HTTP** (since v0.7.0). No installation required — it's a hosted remote server.
+
+> **Migrating from SSE?** See [CHANGELOG.md](CHANGELOG.md#v070--2026-04-07--streamable-http-transport) for the full before/after comparison.
 
 ## Quick Start
 
@@ -38,7 +40,7 @@ Add to `~/Library/Application Support/Claude/claude_desktop_config.json`:
 {
   "mcpServers": {
     "getexperience": {
-      "type": "sse",
+      "type": "streamablehttp",
       "url": "https://getexperience.com/mcp"
     }
   }
@@ -53,7 +55,7 @@ Add to `.cursor/mcp.json`:
 {
   "mcpServers": {
     "getexperience": {
-      "type": "sse",
+      "type": "streamablehttp",
       "url": "https://getexperience.com/mcp"
     }
   }
@@ -73,7 +75,7 @@ No API key required for browsing. For B2B booking, add `X-Api-Key` header:
 {
   "mcpServers": {
     "getexperience": {
-      "type": "sse",
+      "type": "streamablehttp",
       "url": "https://getexperience.com/mcp",
       "headers": {
         "X-Api-Key": "YOUR_API_KEY"
